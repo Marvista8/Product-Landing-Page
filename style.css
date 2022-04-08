@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +10,54 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
+#header {
+    max-width: 100%;
+    height: auto;
+}
+
+.Topnav {
+    background-color: #0A1327;
+    overflow: hidden;
+}
+
+.Topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 39px 10px;
+    margin-left: 18rem;
+    text-decoration: none;
+}
+
+
+.Topnav a:hover {
+    background-color: #0f2f73;
+    padding: 40px;
+}
+
+.Topnav .logo {
+    float: left;
+    width: 6.5em;
+}
+
+.Topnav .icon {
+    display: none;
+}
+
+/* Media queries*/
+@media screen and (max-width: 1375px) {
+    .Topnav a:not(:first-child) {display: none;}
+    .Topnav a .icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: ) {
+    
+}
