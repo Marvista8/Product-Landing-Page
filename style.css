@@ -59,11 +59,48 @@ body {
    opacity: 0.75;
 }
 
+
+.photo1 {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    bottom: 17rem;
+}
+
+
+
+.video-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.pricing-container {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #041945;
+    color: #eac861;
+    text-align: center;
+    font-size: 3em;
+    padding: 25px;
+}
+
+#video {
+    width: 100vw;
+}
+
 #form {
     text-align: center;
     margin: 0 auto;
     width: 50%;
     height: auto;
+}
+
+.col {
+    float: left;
+    display: flex;
+    width: 33.3%;
+    padding: 2rem 1rem;
 }
 
 h2 {
@@ -74,13 +111,22 @@ h2 {
 
 input[type=email] {
     text-align: center;
+    font-size: 1em;
     padding: 15px 8px;
     width: 80%;
 }
 
 .btn {
+    background-color: #000c24;
+    font-size: 1em;
+    color: #dedede;
     padding: 15px 20px;
     width: 80%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0b2966;
 }
 
 /* Media queries*/
