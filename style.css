@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;500&display=swap');
 
+/* Universal Styling*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +13,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: #dedede;
 }
 
 #header {
@@ -18,30 +21,29 @@ body {
     height: auto;
 }
 
+/* Navigation styling*/
 .Topnav {
     background-color: #0A1327;
     overflow: hidden;
 }
 
 .Topnav a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
     font-size: 1.4em;
-    padding: 39px 10px;
-    margin-left: 18rem;
+    padding: 39px 18px;
     text-decoration: none;
+    margin-right: 1rem;
 }
-
 
 .Topnav a:hover {
     background-color: #0f2f73;
-    padding: 40px;
+    padding: 20px;
 }
 
 .Topnav .logo {
-    float: left;
     width: 6.5em;
 }
 
@@ -49,15 +51,73 @@ body {
     display: none;
 }
 
-/* Media queries*/
-@media screen and (max-width: 1375px) {
-    .Topnav a:not(:first-child) {display: none;}
-    .Topnav a .icon {
-        float: right;
-        display: block;
-    }
+.BG {
+   background-image: url('src/pexels-tirachard-kumtanom-347141.jpg');
+   background-size: cover;
+   width: 100vw;
+   height: 120vh;
+   opacity: 0.75;
 }
 
-@media screen and (max-width: ) {
-    
+#form {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    padding: 20rem 0 2rem 0;
+}
+
+input[type=email] {
+    text-align: center;
+    padding: 15px 8px;
+    width: 80%;
+}
+
+.btn {
+    padding: 15px 20px;
+    width: 80%;
+}
+
+/* Media queries*/
+@media screen and (max-width: 800px) {
+    .Topnav a:not(:first-child) {display: none;}
+    .Topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .Topnav.responsive {position: relative;}
+    .Topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .Topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 1rem;
+        font-size: 1.1em;
+        padding: 15px 5px;
+    }
+  }
+
+@media screen and (max-width: 650px) {
+    input[type=email], .btn {
+        width: 80%;
+    }
+    #form {
+        width: 80%;
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
 }
