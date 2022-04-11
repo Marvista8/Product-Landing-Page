@@ -6,3 +6,8 @@ function myTopnav() {
         topnav.className = "Topnav";
     }
 }
+
+let videoOpacity = () => {
+ let videoShade = document.getElementById('video').style.backgroundColor = 'rgba(0,0,0,0.8)';
+ console.log('videoShade: ', videoShade);
+};

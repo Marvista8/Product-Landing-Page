@@ -59,21 +59,20 @@ body {
    opacity: 0.75;
 }
 
-
 .photo1 {
     max-width: 100%;
     margin: 0 auto;
     width: 100vw;
     height: 60vh;
     position: relative;
-    bottom: 17rem;
+    bottom: 18rem;
 }
 
-
-
-.video-container {
+.videoContainer {
     max-width: 100%;
     height: auto;
+    position: relative;
+    top: -60vh;
 }
 
 .pricing-container {
