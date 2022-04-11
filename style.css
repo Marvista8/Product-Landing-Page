@@ -56,7 +56,7 @@ body {
    background-size: cover;
    width: 100vw;
    height: 120vh;
-   opacity: 0.75;
+   opacity: 0.65;
 }
 
 .photo1 {
@@ -99,13 +99,52 @@ body {
     float: left;
     display: flex;
     width: 33.3%;
-    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.price {
+    flex-wrap: wrap;
+    border: 1px solid #000c24;
+    background-color: #e2e2d8;
+    border-radius: 8px;
+    list-style-type: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+}
+
+.icons {
+    padding: 10px;
+    color: #0c4974;
+}
+
+.price-box {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    color: #464646;
+}
+
+.price .head {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #081236;
+    color: #67c5a5;
+    font-size: 1.8em;;
+}
+
+.price li {
+    text-align: center;
+    border-bottom: 1px solid #000c24;
+    padding: 20px;
 }
 
 h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 4rem;
     padding: 20rem 0 2rem 0;
+    color: #000000;
 }
 
 input[type=email] {
