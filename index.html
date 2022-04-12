@@ -33,8 +33,41 @@
         <div class="videoContainer ">
             <video id="video" onplay="videoOpacity()" src="src/pexels-joseph-redfield-10662929.mp4" autoplay muted loop></video>
         </div>
-        <div id="features" class="features-container">
-            <img class="img-slider" src="" alt="">
+        <div id="features" class="slideContainer">
+            <div class="slides fader">
+                <div class="slideNumber">1/4</div>
+                <img src="#" alt="" style="width: 100%;">
+                <div class="caption">Caption</div>
+            </div>
+
+            <div class="slides fader">
+                <div class="slideNumber">1/4</div>
+                <img src="#" alt="" style="width: 100%;">
+                <div class="caption">Caption</div>
+            </div>
+
+            <div class="slides fader">
+                <div class="slideNumber">1/4</div>
+                <img src="#" alt="" style="width: 100%;">
+                <div class="caption">Caption</div>
+            </div>
+
+            <div class="slides fader">
+                <div class="slideNumber">1/4</div>
+                <img src="#" alt="" style="width: 100%;">
+                <div class="caption">Caption</div>
+
+            <a class="previous" href="#" onclick="sldesPlus(-1)">-</a>    
+            <a class="next" href="#" onclick="sldesPlus(1)">+</a>    
+            </div>
+            <br>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
         </div>
         <h3 id="pricing" class="pricing-container">Pricing</h3>
         <div class="col">

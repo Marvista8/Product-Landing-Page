@@ -51,6 +51,7 @@ body {
     display: none;
 }
 
+/* container stylings*/
 .BG {
    background-image: url('src/pexels-tirachard-kumtanom-347141.jpg');
    background-size: cover;
@@ -192,6 +193,33 @@ input[type=email] {
     background-color: #dbeee8;;
 }
 
+/* slideshow styling*/
+.slideContainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.previous, .next {
+    position: absolute;
+    top: 50%;
+    border-radius: 0 3px 3px 0;
+    margin-top: -22px;
+    padding: 18px;
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #bebebe;
+    cursor: pointer;
+    user-select: none;
+    transition: none;
+}
+
+/* footer stylings*/
 .end {
     background-color: #000000bc;
     height: 25vh;
