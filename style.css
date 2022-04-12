@@ -216,8 +216,37 @@ input[type=email] {
     color: #bebebe;
     cursor: pointer;
     user-select: none;
-    transition: none;
+    transition: 0.5s ease-in;
 }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, next:hover {
+    background-color: #041c2c36;
+}
+
+.caption {
+    text-align: center;
+    color: #dbeee8;
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 8px; 
+    width: 100%;
+    padding: 8px 12px;
+}
+
+.slideNumber {
+    font-size: 1em;
+    color: #dbeee8;
+    position: absolute;
+    top: 0;
+    padding: 8px 12px;
+}
+
+
 
 /* footer stylings*/
 .end {
