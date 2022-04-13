@@ -56,7 +56,7 @@ body {
    background-image: url('src/pexels-tirachard-kumtanom-347141.jpg');
    background-size: cover;
    width: 100vw;
-   height: 120vh;
+   height: 150vh;
    opacity: 0.65;
 }
 
@@ -65,15 +65,16 @@ body {
     margin: 0 auto;
     width: 100vw;
     height: 60vh;
+    padding-top: 2.5rem;
     position: relative;
-    bottom: 18rem;
+    bottom: 50%;
 }
 
 .videoContainer {
     max-width: 100%;
     height: auto;
     position: relative;
-    top: -60vh;
+    top: -50vh;
 }
 
 .pricing-container {
@@ -85,8 +86,14 @@ body {
     padding: 25px;
 }
 
+#features {
+    max-width: 100%;
+    margin-top: -28rem;
+}
+
 #video {
     width: 100vw;
+    margin-top: -2rem;
 }
 
 #form {
@@ -189,64 +196,16 @@ input[type=email] {
     font-size: 1.2em;
 }
 
-.price:hover {
-    background-color: #dbeee8;;
-}
+.price:hover { background-color: #dbeee8;}
 
 /* slideshow styling*/
 .slideContainer {
-    max-width: 100%;
+    max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-.slides {
-    display: none;
-}
-
-.previous, .next {
-    position: absolute;
-    top: 50%;
-    border-radius: 0 3px 3px 0;
-    margin-top: -22px;
-    padding: 18px;
-    width: auto;
-    font-size: 18px;
-    font-weight: bold;
-    color: #bebebe;
-    cursor: pointer;
-    user-select: none;
-    transition: 0.5s ease-in;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.previous:hover, next:hover {
-    background-color: #041c2c36;
-}
-
-.caption {
-    text-align: center;
-    color: #dbeee8;
-    font-size: 1.1em;
-    position: absolute;
-    bottom: 8px; 
-    width: 100%;
-    padding: 8px 12px;
-}
-
-.slideNumber {
-    font-size: 1em;
-    color: #dbeee8;
-    position: absolute;
-    top: 0;
-    padding: 8px 12px;
-}
-
-
+.slides { display: none;}
 
 /* footer stylings*/
 .end {
@@ -320,5 +279,24 @@ address {
     }
     .end {
         margin-top: 220vh;
+    }
+}
+
+@media screen and (max-width: 1722px) {
+    .photo1 {
+        max-width: 100%;
+        position: relative;
+        bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+    .videoContainer {
+        max-width: 100%;
+        position: relative;
+        top: -56vh;
+    }
+    #video {
+        margin-top: -2rem;
     }
 }
